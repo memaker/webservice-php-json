@@ -56,5 +56,4 @@ class api
 			$list[] = $row;
 		}
 		return $list;
-
 	}
