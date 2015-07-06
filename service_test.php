@@ -11,7 +11,7 @@
 	<tr>
 		<td align="right">id</td>
 		<td><input name="id" type="text" size="50" maxlength="50"></td>
-		<td>eg. 00028 for one user. Empty for all the users</td>	
+		<td>eg. user identifier for one user; empty for all the users</td>	
 	</tr>
 	<tr>
 		<td colspan="3"><input type="submit" name="boton" value="Send"></td>

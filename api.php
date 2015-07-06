@@ -7,7 +7,7 @@
 
 class api
 {
-	private $db; // database
+	private $db;
 
 	/**
 	 * Constructor - open DB connection
@@ -18,7 +18,7 @@ class api
 	function __construct()
 	{
 		$conf = json_decode(file_get_contents('configuration.json'), TRUE);
-		$this->db = new mysqli($conf["host"], $conf["user"], $conf["password"], $conf["database"]); // development
+		$this->db = new mysqli($conf["host"], $conf["user"], $conf["password"], $conf["database"]);
 	}
 
 	/**
@@ -36,7 +36,7 @@ class api
 	 * Get the list of users
 	 *
 	 * @param none or user id
-	 * @return list of data
+	 * @return list of data on JSON format
 	 */
 	function get($params)
 	{
@@ -57,3 +57,4 @@ class api
 		}
 		return $list;
 	}
+}

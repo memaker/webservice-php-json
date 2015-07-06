@@ -12,7 +12,7 @@
  *
  * This file can be tested from the browser:
  * http://localhost/webservice-php-json/service_test.php
- * 
+ *
  * Based on
  * http://www.raywenderlich.com/2941/how-to-write-a-simple-phpmysql-web-service-for-an-ios-app
  */
@@ -27,7 +27,7 @@ $api = new api();
 $message = array();
 
 switch($_POST["action"])
-{		
+{
 	case 'get':
 		$params = array();
 		$params['id'] = isset($_POST["id"]) ? $_POST["id"] : '';
@@ -39,7 +39,7 @@ switch($_POST["action"])
 			$message["message"] = "Error on get method";
 		}
 		break;
-	
+
 	default:
 		$message["code"] = "1";
 		$message["message"] = "Unknown method " . $_POST["action"];
