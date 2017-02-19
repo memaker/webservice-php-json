@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `real_name`, `password`, `email`) VALUES
+INSERT INTO `user` (`id`, `username`, `realname`, `password`, `email`) VALUES
 (1, 'john', 'John Doe', 'Saltro45', 'john.doe@mail.com'),
 (2, 'saldo', 'Saldo Rush', 'hro8052w', 'saldo.rush@mail.com'),
 (3, 'berta', 'Berta Crush', 'Tre4gh0M', 'berta.crush@mail.com'),
